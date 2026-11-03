@@ -62,6 +62,31 @@
     update();
   }
 
+  // Burger menu (below 860px). Without JS the button stays hidden.
+  var burger = document.querySelector('.burger');
+  var menu = document.getElementById('menu');
+  if (burger && menu) {
+    var isOpen = function () { return burger.getAttribute('aria-expanded') === 'true'; };
+    var setOpen = function (open) {
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menu.classList.toggle('open', open);
+    };
+    burger.hidden = false;
+    burger.addEventListener('click', function () { setOpen(!isOpen()); });
+    menu.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
+    document.addEventListener('click', function (e) {
+      if (isOpen() && !menu.contains(e.target) && !burger.contains(e.target)) setOpen(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && isOpen()) { setOpen(false); burger.focus(); }
+    });
+    if (window.matchMedia) {
+      var wide = window.matchMedia('(min-width: 861px)');
+      var onWide = function () { if (wide.matches) setOpen(false); };
+      if (wide.addEventListener) wide.addEventListener('change', onWide);
+    }
+  }
+
   // Google Maps loads only when the visitor asks for it: no Google requests or cookies before the click.
   // The URL is fixed here (not read from the page), and the CSP allows frames from www.google.com only.
   var MAP_SRC = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.2944895082524!2d20.015556699999998!3d39.867641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b1598723f0d31%3A0x188df0521bb6e759!2sHOTEL%20RESTORANT%20ERDANO!5e0!3m2!1sen!2s!4v1793736494711!5m2!1sen!2s';
