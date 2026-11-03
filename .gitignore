@@ -1,0 +1,8 @@
+# Original design export and unprocessed phone photos (may contain GPS metadata) — kept locally only
+_design-export/
+
+# OS / editor clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
