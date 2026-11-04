@@ -13,12 +13,12 @@
     <image:image><image:loc>https://hotel-erdano.example/img/room-double.jpg</image:loc></image:image>
     <image:image><image:loc>https://hotel-erdano.example/img/room-interior.jpg</image:loc></image:image>
     <image:image><image:loc>https://hotel-erdano.example/img/restaurant-terrace.jpg</image:loc></image:image>
-    <image:image><image:loc>https://hotel-erdano.example/img/dish-shrimp-linguine.jpg</image:loc></image:image>
-    <image:image><image:loc>https://hotel-erdano.example/img/dish-shrimp-claypot.jpg</image:loc></image:image>
-    <image:image><image:loc>https://hotel-erdano.example/img/dish-mixed-grill.jpg</image:loc></image:image>
-    <image:image><image:loc>https://hotel-erdano.example/img/dish-beans-cheese.jpg</image:loc></image:image>
-    <image:image><image:loc>https://hotel-erdano.example/img/dish-steak.jpg</image:loc></image:image>
-    <image:image><image:loc>https://hotel-erdano.example/img/dish-potatoes-meatballs.jpg</image:loc></image:image>
+    <image:image><image:loc>https://hotel-erdano.example/img/dish-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://hotel-erdano.example/img/dish-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://hotel-erdano.example/img/dish-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://hotel-erdano.example/img/dish-4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://hotel-erdano.example/img/dish-5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://hotel-erdano.example/img/dish-6.jpg</image:loc></image:image>
     <image:image><image:loc>https://hotel-erdano.example/img/entrance-night.jpg</image:loc></image:image>
   </url>
   <url>
