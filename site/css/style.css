@@ -241,3 +241,19 @@ h1,h2,h3{font-family:var(--serif);font-weight:400}
 .notfound{min-height:100vh;display:flex;flex-direction:column;justify-content:center;gap:24px;padding-block:64px}
 .notfound .kicker{color:var(--teal)}
 .notfound .intro-p,.notfound .actions{margin:0}
+
+/* Privacy policy pages */
+.legal-top{background:var(--ink);color:var(--sand)}
+.legal{max-width:760px;padding-block:72px 96px}
+.legal-date{margin:14px 0 0;font-size:14px;color:var(--muted-2)}
+.legal h2{margin:44px 0 0;font-size:30px;line-height:1.15}
+.legal p,.legal li{font-size:16px;line-height:1.75;color:var(--text-2)}
+.legal p{margin:12px 0 0}
+.legal .legal-date{margin-top:14px;font-size:14px;color:var(--muted-2)}
+.legal ul{margin:12px 0 0;padding-left:20px}
+.legal li+li{margin-top:6px}
+.legal a{color:var(--teal);font-weight:600;overflow-wrap:anywhere}
+.legal a:hover{color:var(--ink)}
+.legal code{font-size:14px}
+.legal-foot{background:var(--deep)}
+.legal-foot .footer-bar{margin-top:0;padding-block:22px 40px;border-top:0}
